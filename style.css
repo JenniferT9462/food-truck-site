@@ -15,3 +15,15 @@
         font-size: 1.5rem;
     }
 }
+
+/* Bootstrap has no hover class for cards, so this one is CSS. 
+It goes in style.css. Hover a card. 
+Expected: the card rises and the shadow grows. */
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
